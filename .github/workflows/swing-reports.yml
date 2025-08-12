@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install notion-client
+             pip install -r swing-trader-agent/requirements.txt
       - name: Unpack code
         run: unzip -o swing-tracer-agent-latest.zip
       - name: Create Notion DBs if needed
